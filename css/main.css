@@ -1,0 +1,13 @@
+button, #txtbox {
+
+    background-color: #008CBA;; /* Green */
+    border: none;
+    color: white;
+    padding: auto;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 54px;
+    border-radius: 50%;
+  }
+
