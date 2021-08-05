@@ -1,6 +1,8 @@
-var ttxbox = document.getElementById("txtbox");
+//var txtbox = document.getElementById("txtbox");
 function loadfunc(){
-    document.getElementById("txtbox").value = 0;
+    document.getElementById("txtbox").value = "";
+    num1 = undefined;
+    num2 = undefined;
 }
 
 //button 0
@@ -81,6 +83,40 @@ document.getElementById("btn9").addEventListener("click",function(){
 });
 
 
+//button clear
+document.getElementById("btnclear").addEventListener("click",function(){
+    document.getElementById("txtbox").value = "";
+    num1 = undefined;
+    num2 = undefined;
 
+});
+
+var num1 ;
+var num2;
+var opt = "";
+
+//addition 
+document.getElementById("btnplus").addEventListener("click",function(){
+    
+    if  (num1 == undefined )
+    {//alert("num1 "+num1);
+        
+        num1 = parseFloat(document.getElementById("txtbox").value);
+        document.getElementById("txtbox").value = "";
+    }
+    
+    else if(num1 != undefined)
+    {
+        num2 = parseFloat(document.getElementById("txtbox").value);
+        num1 = document.getElementById("txtbox").value = num1 + num2;
+        
+    }
+
+    else if(num2 != undefined)
+    {
+        document.getElementById("txtbox").value = "";
+        num2 = document.getElementById("txtbox").value = num1 + num2;
+    }
+});
 
 
