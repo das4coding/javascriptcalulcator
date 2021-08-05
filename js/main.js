@@ -1,4 +1,7 @@
 var ttxbox = document.getElementById("txtbox");
+function loadfunc(){
+    document.getElementById("txtbox").value = 0;
+}
 
 //button 0
 document.getElementById("btn0").addEventListener("click",function(){
@@ -51,3 +54,33 @@ document.getElementById("btn5").addEventListener("click",function(){
     document.getElementById("txtbox").value += 5;
 
 });
+
+//button 6
+document.getElementById("btn6").addEventListener("click",function(){
+    document.getElementById("txtbox").value += 6;
+
+});
+
+//button 7
+document.getElementById("btn7").addEventListener("click",function(){
+    document.getElementById("txtbox").value += 7;
+
+});
+
+
+//button 8
+document.getElementById("btn8").addEventListener("click",function(){
+    document.getElementById("txtbox").value += 8;
+
+});
+
+//button 9
+document.getElementById("btn9").addEventListener("click",function(){
+    document.getElementById("txtbox").value += 9;
+
+});
+
+
+
+
+
